@@ -2,39 +2,33 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
-  <!-- Replace the content tag with appropriate information -->
-  <meta name="description" content="DESCRIPTION META TAG">
-  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
-  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
-  <meta property="og:url" content="URL OF THE WEBSITE"/>
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
-  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <!-- Meta tags for social media banners -->
+  <meta name="description" content="Diffuse-CLoC: A guided diffusion framework for physics-based character look-ahead control enabling intuitive, steerable, and physically realistic motion generation.">
+  <meta property="og:title" content="Diffuse-CLoC: Guided Diffusion for Physics-based Character Look-ahead Control"/>
+  <meta property="og:description" content="A guided diffusion framework for physics-based look-ahead control that enables intuitive, steerable, and physically realistic motion generation through joint state-action modeling."/>
+  <meta property="og:url" content="https://your-domain.com/diffuse-cloc"/>
+  <!-- Path to banner image -->
+  <meta property="og:image" content="static/images/diffuse_cloc_banner.png" />
   <meta property="og:image:width" content="1200"/>
   <meta property="og:image:height" content="630"/>
 
-
-  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
-  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
-  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:title" content="Diffuse-CLoC: Guided Diffusion for Physics-based Character Look-ahead Control">
+  <meta name="twitter:description" content="A guided diffusion framework enabling steerable and physically realistic motion generation for character control.">
+  <meta name="twitter:image" content="static/images/diffuse_cloc_twitter_banner.png">
   <meta name="twitter:card" content="summary_large_image">
-  <!-- Keywords for your paper to be indexed by-->
-  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <!-- Keywords for indexing -->
+  <meta name="keywords" content="diffusion models, character animation, physics-based control, motion generation, robotics, machine learning, SIGGRAPH">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-
-  <title>Academic Project Page</title>
+  <title>Diffuse-CLoC: Guided Diffusion for Physics-based Character Look-ahead Control</title>
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
-  rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
 
   <link rel="stylesheet" href="static/css/bulma.min.css">
   <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
   <link rel="stylesheet" href="static/css/bulma-slider.min.css">
   <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
-  <link rel="stylesheet"
-  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="static/css/index.css">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -43,9 +37,70 @@
   <script src="static/js/bulma-carousel.min.js"></script>
   <script src="static/js/bulma-slider.min.js"></script>
   <script src="static/js/index.js"></script>
+
+  <style>
+    .video-comparison {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+    }
+    .additional-carousel .item {
+      text-align: center;
+    }
+    .additional-carousel video {
+      max-width: 80%;
+      height: auto;
+      margin: 0 auto;
+      display: block;
+    }
+    .video-comparison video {
+      width: 48%;
+      height: auto;
+    }
+    .comparison-label {
+      font-weight: bold;
+      font-size: 1.1em;
+      margin-bottom: 10px;
+      color: #363636;
+    }
+    .important-videos-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      margin: 20px 0;
+    }
+    .video-card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .video-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+    }
+    .video-card video {
+      width: 100%;
+      height: auto;
+    }
+    .video-card-content {
+      padding: 15px;
+    }
+    .video-card-title {
+      font-weight: bold;
+      font-size: 1.1em;
+      margin-bottom: 8px;
+      color: #363636;
+    }
+    .video-card-description {
+      color: #666;
+      font-size: 0.9em;
+      line-height: 1.4;
+    }
+  </style>
 </head>
 <body>
-
 
   <section class="hero">
     <div class="hero-body">
@@ -83,7 +138,7 @@
                     <div class="publication-links">
                          <!-- Arxiv PDF link -->
                       <span class="link-block">
-                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
+                        <a href="https://arxiv.org/pdf/2503.11801.pdf" target="_blank"
                         class="external-link button is-normal is-rounded is-dark">
                         <span class="icon">
                           <i class="fas fa-file-pdf"></i>
@@ -105,7 +160,7 @@
 
                   <!-- Github link -->
                   <span class="link-block">
-                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
+                    <a href="https://github.com/YOUR_REPO_HERE" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
@@ -132,18 +187,16 @@
   </div>
 </section>
 
-
 <!-- Teaser video-->
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <!-- Your video here -->
-        <source src="static/videos/banner_video.mp4"
-        type="video/mp4">
-      </video>
+      <div class="publication-video">
+        <!-- Youtube embed code -->
+        <iframe src="https://www.youtube.com/embed/iTYs83WtGB4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      </div>
       <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
+        Diffuse-CLoC enables intuitive steering of physics-based character motion through guided diffusion, combining the flexibility of kinematic motion generation with physical realism.
       </h2>
     </div>
   </div>
@@ -167,156 +220,363 @@
 </section>
 <!-- End paper abstract -->
 
-
-<!-- Image carousel -->
+<!-- Important Videos Showcase -->
 <section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          First image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
-     </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
-    </div>
-  </div>
-</div>
-</div>
-</section>
-<!-- End image carousel -->
+  <div class="hero-body" style="padding-bottom: 40px;">
+    <div style="max-width: 90%; margin: 0 auto; padding: 0 20px;">
+      <h2 class="title is-3 has-text-centered">Zero-Shot Generalization to Downstream Tasks </h2>
+      <!-- <p class="subtitle has-text-centered">Our method demonstrates superior performance across diverse tasks</p> -->
+      
+      <div class="important-videos-grid" style="display: grid !important; grid-template-columns: repeat(4, 1fr) !important; gap: 40px !important; margin: 20px 0 30px 0 !important; max-width: 100% !important;">
+        <!-- Video Card 1 -->
+        <div class="video-card" style="min-width: 400px; max-width: 100%;">
+          <video autoplay controls muted loop style="width: 100%; height: auto;">
+            <source src="static/videos/important_videos/cyl_forest_16_character_pred.mp4" type="video/mp4">
+          </video>
+          <div class="video-card-content">
+            <div class="video-card-title">Dynamic Obstacle Avoidance</div>
+            <div class="video-card-description">Character smoothly navigates around dynamic obstacles while maintaining natural motion patterns.</div>
+          </div>
+        </div>
 
+        <!-- Video Card 2 -->
+        <div class="video-card" style="min-width: 400px; max-width: 100%;">
+          <video autoplay controls muted loop style="width: 100%; height: auto;">
+            <source src="static/videos/important_videos/cylinder_ring.mp4" type="video/mp4">
+          </video>
+          <div class="video-card-content">
+            <div class="video-card-title">Static Obstacle Navigation</div> 
+            <div class="video-card-description">Character moves while avoiding static obstalces</div>
+          </div>
+        </div>
+          <!-- Motion In-betweening -->
+           <!-- Generates physically plausible transitions between keyframe poses. -->
+        <!-- Video Card 3 -->
+        <div class="video-card" style="min-width: 400px; max-width: 100%;">
+          <video autoplay controls muted loop style="width: 100%; height: auto;">
+            <source src="static/videos/important_videos/reach_zoomout.mp4" type="video/mp4">
+          </video>
+          <div class="video-card-content">
+            <div class="video-card-title">Task-space Control</div>
+            <div class="video-card-description">Precise end-effector tracking while maintaining whole-body coordination.</div>
+          </div>
+        </div>
 
+        <!-- Video Card 4 -->
+        <div class="video-card" style="min-width: 400px; max-width: 100%;">
+          <video autoplay controls muted loop style="width: 100%; height: auto;">
+            <source src="static/videos/important_videos/jump_crawl_3_2.mp4" type="video/mp4">
+          </video>
+          <div class="video-card-content">
+            <div class="video-card-title">Long-horizon Planning</div>
+            <div class="video-card-description">Complex multi-stage tasks executed with a single pre-trained model.</div>
+          </div>
+        </div>
 
+        <!-- Video Card 5 -->
+        <div class="video-card" style="min-width: 400px; max-width: 100%;">
+          <video autoplay controls muted loop style="width: 100%; height: auto;">
+            <source src="static/videos/important_videos/mib_follow_const_vel.mp4" type="video/mp4">
+          </video>
+          <div class="video-card-content">
+            <div class="video-card-title"> Motion In-betweening</div>
+            <div class="video-card-description"> Generates physically plausible transitions between keyframe poses.</div>
+          </div>
+        </div>
 
-<!-- Youtube video -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <!-- Paper video. -->
-      <h2 class="title is-3">Video Presentation</h2>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          
-          <div class="publication-video">
-            <!-- Youtube embed code here -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <!-- Video Card 6 -->
+        <div class="video-card" style="min-width: 400px; max-width: 100%;">
+          <video autoplay controls muted loop style="width: 100%; height: auto;">
+            <source src="static/videos/important_videos/stages_jump_origin.mp4" type="video/mp4">
+          </video>
+          <div class="video-card-content">
+            <div class="video-card-title">Jumping Between Pillars</div>
+            <div class="video-card-description">Can generalize to jumping over increasing pillar heights despite only seeing jumping on flatground.</div>
+          </div>
+        </div>
+
+        <!-- Video Card 7 -->
+        <div class="video-card" style="min-width: 400px; max-width: 100%;">
+          <video autoplay controls muted loop style="width: 100%; height: auto;">
+            <source src="static/videos/important_videos/waypoint_only.mp4" type="video/mp4">
+          </video>
+          <div class="video-card-content">
+            <div class="video-card-title">Waypoint</div>
+            <div class="video-card-description">Character can move between different waypoints.</div>
+          </div>
+        </div>
+
+        <!-- Video Card 8 -->
+        <div class="video-card" style="min-width: 400px; max-width: 100%;">
+          <video autoplay controls muted loop style="width: 100%; height: auto;">
+            <source src="static/videos/important_videos/steer_with_pred_2.mp4" type="video/mp4">
+          </video>
+          <div class="video-card-content">
+            <div class="video-card-title">Interactive Joystick Control</div>
+            <div class="video-card-description">Real-time responsive motion adaptation to user input.</div>
           </div>
         </div>
       </div>
     </div>
   </div>
 </section>
-<!-- End youtube video -->
+<!-- End Important Videos -->
 
-
-<!-- Video carousel -->
+<!-- Baseline Comparisons -->
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <video poster="" id="video1" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4"
-            type="video/mp4">
-          </video>
+      <h2 class="title is-3 has-text-centered">Baseline Comparisons</h2>
+      <p class="subtitle has-text-centered">Diffuse-CLoC vs. Kinematic Motion Model with Universal RL motion Tracker </p>
+      
+      <div id="comparison-carousel" class="carousel results-carousel">
+        <!-- Comparison 1 -->
+        <div class="item">
+          <div class="video-comparison" style="display: flex; gap: 5px; align-items: center; justify-content: center;">
+            <div style="text-align: center; width: 48%; max-width: 600px;">
+              <div class="comparison-label">Left: Diffuse-CLoC (Ours)</div>
+              <video autoplay controls muted loop style="width: 100%; height: auto; max-width: none;">
+                <source src="static/videos/baseline_comparison_jump/jump_obs_ours_with_pred.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div style="text-align: center; width: 48%; max-width: 600px;">
+              <div class="comparison-label">Right: Baseline Method</div>
+              <video autoplay controls muted loop style="width: 100%; height: auto; max-width: none;">
+                <source src="static/videos/baseline_comparison_jump/jump_obs_phc_with_pred.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+          <h2 class="subtitle has-text-centered" style="margin-top: 20px;">
+            <strong>Jumping over Obstacle</strong>
+             <!-- Our method generates smoother, more natural motions while maintaining physical realism compared to traditional hierarchical approaches. -->
+          </h2>
         </div>
-        <div class="item item-video2">
-          <video poster="" id="video2" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4"
-            type="video/mp4">
-          </video>
+
+        <!-- Comparison 2 -->
+        <div class="item">
+          <div class="video-comparison" style="display: flex; gap: 5px; align-items: center; justify-content: center;">
+            <div style="text-align: center; width: 48%; max-width: 600px;">
+              <div class="comparison-label">Left: Diffuse-CLoC (Ours)</div>
+              <video autoplay controls muted loop style="width: 100%; height: auto; max-width: none;">
+                <source src="static/videos/baseline_comparison_perturbation/perturb_ours.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div style="text-align: center; width: 48%; max-width: 600px;">
+              <div class="comparison-label">Right: Baseline Method</div>
+              <video autoplay controls muted loop style="width: 100%; height: auto; max-width: none;">
+                <source src="static/videos/baseline_comparison_perturbation/perturb_phc.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+          <h2 class="subtitle has-text-centered" style="margin-top: 20px;">
+            <strong>Perturbation Recovery</strong>
+            <!-- Diffuse-CLoC demonstrates superior long-horizon planning capabilities without requiring explicit high-level planners. -->
+          </h2>
         </div>
-        <div class="item item-video3">
-          <video poster="" id="video3" autoplay controls muted loop height="100%">\
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4"
-            type="video/mp4">
-          </video>
-        </div>
+
+        <!-- Comparison 3 -->
+        <!-- <div class="item">
+          <div class="video-comparison" style="display: flex; gap: 5px; align-items: center; justify-content: center;">
+            <div style="text-align: center; width: 48%; max-width: 600px;">
+              <div class="comparison-label">Left: Diffuse-CLoC (Ours)</div>
+              <video autoplay controls muted loop style="width: 100%; height: auto; max-width: none;">
+                <source src="static/videos/baseline_comparison_forest/forest_32_states.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div style="text-align: center; width: 48%; max-width: 600px;">
+              <div class="comparison-label">Right: Baseline Method</div>
+              <video autoplay controls muted loop style="width: 100%; height: auto; max-width: none;">
+                <source src="static/videos/baseline_comparison_forest/forest_phc.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+          <h2 class="subtitle has-text-centered" style="margin-top: 20px;">
+            <strong>Static Obstacle Avoidance 
+          </h2>
+        </div> -->
+
+
       </div>
     </div>
   </div>
 </section>
-<!-- End video carousel -->
+<!-- End Baseline Comparisons -->
 
-
-
-
-
-
-<!-- Paper poster -->
+<!-- Additional Results Carousel -->
 <section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container">
-      <h2 class="title">Poster</h2>
+      <h2 class="title is-3 has-text-centered">Additional Tasks</h2>
+      <div id="additional-carousel" class="carousel results-carousel additional-carousel">
+          <div class="item">
+          <video poster="" autoplay controls muted loop style="max-width: 600px; width: 80%; height: auto; margin: 0 auto; display: block;">
+            <source src="static/videos/other_videos/outro.mp4" type="video/mp4">
+          </video>
+          <!-- <h2 class="subtitle has-text-centered">
+            Ablation studies and method analysis.
+          </h2> -->
+        </div>
 
-      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
-          </iframe>
-        
+        <div class="item">
+          <video poster="" autoplay controls muted loop style="max-width: 600px; width: 80%; height: auto; margin: 0 auto; display: block;">
+            <source src="static/videos/other_videos/multi_gap_jump_0.mp4" type="video/mp4">
+          </video>
+          <!-- <h2 class="subtitle has-text-centered">
+            Additional experimental results demonstrating robustness.
+          </h2> -->
+        </div>
+        <div class="item">
+          <video poster="" autoplay controls muted loop style="max-width: 600px; width: 80%; height: auto; margin: 0 auto; display: block;">
+            <source src="static/videos/other_videos/cyl_forest_4_character.mp4" type="video/mp4">
+          </video>
+          <!-- <h2 class="subtitle has-text-centered">
+            Comparison with other state-of-the-art methods.
+          </h2> -->
+        </div>
+        <div class="item">
+          <video poster="" autoplay controls muted loop style="max-width: 600px; width: 80%; height: auto; margin: 0 auto; display: block;">
+            <source src="static/videos/other_videos/root_path_terrain_3.mp4" type="video/mp4">
+          </video>
+          <!-- <h2 class="subtitle has-text-centered">
+            Extended evaluation on diverse scenarios.
+          </h2> -->
+        </div>
+        <div class="item">
+          <video poster="" autoplay controls muted loop style="max-width: 600px; width: 80%; height: auto; margin: 0 auto; display: block;">
+            <source src="static/videos/other_videos/two_jump_2_another_viiew.mp4" type="video/mp4">
+          </video>
+          <!-- <h2 class="subtitle has-text-centered">
+            Ablation studies and method analysis.
+          </h2> -->
+        </div>
+
+
+
       </div>
     </div>
-  </section>
-<!--End paper poster -->
-
+  </div>
+</section>
+<!-- End Additional Results -->
 
 <!--BibTex citation -->
-  <section class="section" id="BibTeX">
-    <div class="container is-max-desktop content">
-      <h2 class="title">BibTeX</h2>
-      <pre><code>BibTex Code Here</code></pre>
-    </div>
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@article{huang2025diffusecloc,
+  title={Diffuse-CLoC: Guided Diffusion for Physics-based Character Look-ahead Control},
+  author={Huang, Xiaoyu and Truong, Takara and Zhang, Yunbo and Yu, Fangzhou and Sleiman, Jean Pierre and Hodgins, Jessica and Sreenath, Koushil and Farshidian, Farbod},
+  journal={ACM Transactions on Graphics (TOG)},
+  volume={44},
+  number={4},
+  pages={1--13},
+  year={2025},
+  publisher={ACM},
+  note={SIGGRAPH 2025}
+}</code></pre>
+  </div>
 </section>
 <!--End BibTex citation -->
 
-
-  <footer class="footer">
+<footer class="footer">
   <div class="container">
     <div class="columns is-centered">
       <div class="column is-8">
         <div class="content">
-
           <p>
-            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
-            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
             Commons Attribution-ShareAlike 4.0 International License</a>.
           </p>
-
         </div>
       </div>
     </div>
   </div>
 </footer>
 
-<!-- Statcounter tracking code -->
-  
-<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+<!-- Custom script to disable carousel auto-advance -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Wait for carousel libraries to load
+  setTimeout(function() {
+    // Clear any existing intervals first
+    for (let i = 1; i < 99999; i++) {
+      window.clearInterval(i);
+    }
+    
+    // Initialize carousels with autoplay completely disabled
+    if (typeof bulmaCarousel !== 'undefined') {
+      // Initialize comparison carousel without any autoplay
+      const comparisonCarousel = bulmaCarousel.attach('#comparison-carousel', {
+        autoplay: false,
+        infinite: true,
+        loop: true,
+        duration: 500,
+        easing: 'ease-in-out'
+      });
 
-    <!-- End of Statcounter Code -->
+      // Initialize additional carousel without any autoplay
+      const additionalCarousel = bulmaCarousel.attach('#additional-carousel', {
+        autoplay: false,
+        infinite: true,
+        loop: true,
+        duration: 500,
+        easing: 'ease-in-out'
+      });
 
-  </body>
-  </html>
+      // Aggressively stop any autoplay that might start
+      setTimeout(function() {
+        if (comparisonCarousel && comparisonCarousel.length > 0) {
+          comparisonCarousel.forEach(carousel => {
+            // Stop autoplay multiple ways
+            if (carousel.stop) carousel.stop();
+            if (carousel.pause) carousel.pause();
+            if (carousel.stopAutoplay) carousel.stopAutoplay();
+            if (carousel._autoplay) carousel._autoplay = false;
+            if (carousel.options) carousel.options.autoplay = false;
+            
+            // Clear any intervals on the carousel object
+            Object.keys(carousel).forEach(key => {
+              if (typeof carousel[key] === 'number' && carousel[key] > 0) {
+                clearInterval(carousel[key]);
+              }
+            });
+          });
+        }
+
+        if (additionalCarousel && additionalCarousel.length > 0) {
+          additionalCarousel.forEach(carousel => {
+            // Stop autoplay multiple ways
+            if (carousel.stop) carousel.stop();
+            if (carousel.pause) carousel.pause();
+            if (carousel.stopAutoplay) carousel.stopAutoplay();
+            if (carousel._autoplay) carousel._autoplay = false;
+            if (carousel.options) carousel.options.autoplay = false;
+            
+            // Clear any intervals on the carousel object
+            Object.keys(carousel).forEach(key => {
+              if (typeof carousel[key] === 'number' && carousel[key] > 0) {
+                clearInterval(carousel[key]);
+              }
+            });
+          });
+        }
+      }, 100);
+    }
+    
+    // Additional fallback: monitor and stop any new intervals
+    const originalSetInterval = window.setInterval;
+    window.setInterval = function(fn, delay) {
+      // Block intervals that might be carousel autoplay (typically 3000-8000ms)
+      if (delay >= 1000 && delay <= 10000) {
+        console.log('Blocked potential carousel autoplay interval');
+        return null;
+      }
+      return originalSetInterval.apply(this, arguments);
+    };
+    
+  }, 1000);
+});
+</script>
+
+</body>
+</html>
